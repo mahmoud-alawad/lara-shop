@@ -12,9 +12,7 @@
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--alpinejs-->
-    <script src="//unpkg.com/alpinejs" defer></script>
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('js/app.js') }}" rel="stylesheet">
+    @vite('resources/css/app.css')
     <title>{{ config('app.name', 'Laravel') }}</title>
 </head>
 
@@ -27,6 +25,7 @@
         </div>
     </div>
     <x-flash-message />
+    @vite('resources/js/app.js')
 </body>
 
 </html>
